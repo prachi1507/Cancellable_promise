@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: powderblue;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        max-height: 400px;
+        height: 100%;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px 2px #00000080;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        background-color: black;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        padding: 0.5rem 2rem;
+        font-size: 18px;
+        max-width: 200px;
+        width: 100%;
+      }
+      #Clock {
+        font-size: 25px;
+        color: green;
+        font-weight: 600;
+      }
+      button:last-child {
+        background-color: red;
+      }
+      .res{
+        display: flex;
+        font-size: 22px;
+        font-weight: 600;
+        color: #b7b929;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="display: flex; flex-direction: column">
+        <h3>Timer </h3>
+        <p id="Clock"></p>
+      </div>
+      <div class="res">
+        <h4>Promise Condition :</h4>
+        <h1 class="result"></h1>
+      </div>
+
+      <button id="startTimeOut">Start</button>
+      <button id="cancelTimeout">Cancel</button>
+    </div>
+    <script src="index1.js"></script>
+  </body>
+</html>
